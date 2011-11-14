@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Untitled Gantt Project" company="" webLink="http://" view-date="2011-10-17" view-index="0" gantt-divider-location="356" resource-divider-location="301" version="2.0">
+    <description/>
+    <view zooming-state="default:3" id="gantt-chart"/>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="55" order="0"/>
+        <field id="1" name="Rôle par défaut" width="44" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <calendar id="1" name="default">
+                <default-week sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+                <overriden-day-types/>
+                <days/>
+            </calendar>
+        </day-types>
+    </calendars>
+    <tasks color="#8cb6ce">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+            <taskproperty id="tpc0" name="N°" type="custom" valuetype="double"/>
+        </taskproperties>
+        <task id="1" name="Prise en main du sujet" color="#8cb6ce" meeting="false" start="2011-10-18" duration="14" complete="0" priority="1" expand="true">
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+            <customproperty taskproperty-id="tpc0"/>
+        </task>
+        <task id="2" name="Autres taches d'init" color="#8cb6ce" meeting="false" start="2011-10-18" duration="19" complete="0" priority="1" expand="true">
+            <customproperty taskproperty-id="tpc0"/>
+        </task>
+        <task id="4" name="Etude de l'existant" color="#8cb6ce" meeting="false" start="2011-11-07" duration="7" complete="0" priority="1" expand="true">
+            <depend id="22" type="2" difference="0" hardness="Strong"/>
+            <customproperty taskproperty-id="tpc0"/>
+        </task>
+        <task id="5" name="Choix de solutions" color="#8cb6ce" meeting="false" start="2011-11-07" duration="7" complete="0" priority="1" expand="true">
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+            <depend id="14" type="2" difference="0" hardness="Strong"/>
+            <depend id="21" type="2" difference="0" hardness="Strong"/>
+            <depend id="22" type="2" difference="0" hardness="Strong"/>
+            <customproperty taskproperty-id="tpc0"/>
+        </task>
+        <task id="7" name="Architecture fonctionnelle" color="#8cb6ce" meeting="false" start="2011-11-16" duration="3" complete="0" priority="1" expand="true">
+            <depend id="10" type="2" difference="0" hardness="Strong"/>
+            <depend id="11" type="2" difference="0" hardness="Strong"/>
+            <customproperty taskproperty-id="tpc0"/>
+        </task>
+        <task id="8" name="Architecture applicative" color="#8cb6ce" meeting="false" start="2011-11-16" duration="3" complete="0" priority="1" expand="true">
+            <depend id="10" type="2" difference="0" hardness="Strong"/>
+            <depend id="11" type="2" difference="0" hardness="Strong"/>
+            <customproperty taskproperty-id="tpc0"/>
+        </task>
+        <task id="9" name="Architecture physique" color="#8cb6ce" meeting="false" start="2011-11-16" duration="3" complete="0" priority="1" expand="true">
+            <depend id="10" type="2" difference="0" hardness="Strong"/>
+            <depend id="11" type="2" difference="0" hardness="Strong"/>
+            <customproperty taskproperty-id="tpc0"/>
+        </task>
+        <task id="10" name="Choix logiciels et tarification" color="#8cb6ce" meeting="false" start="2011-11-21" duration="1" complete="0" priority="1" expand="true">
+            <depend id="12" type="2" difference="0" hardness="Strong"/>
+            <customproperty taskproperty-id="tpc0"/>
+        </task>
+        <task id="11" name="Choix matériels et tarification" color="#8cb6ce" meeting="false" start="2011-11-21" duration="1" complete="0" priority="1" expand="true">
+            <depend id="12" type="2" difference="0" hardness="Strong"/>
+            <customproperty taskproperty-id="tpc0"/>
+        </task>
+        <task id="12" name="Financement" color="#8cb6ce" meeting="false" start="2011-11-22" duration="2" complete="0" priority="1" expand="true">
+            <depend id="17" type="2" difference="0" hardness="Strong"/>
+            <customproperty taskproperty-id="tpc0"/>
+        </task>
+        <task id="14" name="Choix des critères" color="#8cb6ce" meeting="false" start="2011-11-16" duration="1" complete="0" priority="1" expand="true">
+            <depend id="15" type="2" difference="0" hardness="Strong"/>
+            <customproperty taskproperty-id="tpc0"/>
+        </task>
+        <task id="15" name="Méthodes d'évaluation des critères" color="#8cb6ce" meeting="false" start="2011-11-17" duration="2" complete="0" priority="1" expand="true">
+            <depend id="17" type="2" difference="0" hardness="Strong"/>
+            <customproperty taskproperty-id="tpc0"/>
+        </task>
+        <task id="17" name="plan des documents" color="#8cb6ce" meeting="false" start="2011-11-24" duration="3" complete="0" priority="1" expand="true">
+            <depend id="19" type="2" difference="0" hardness="Strong"/>
+            <depend id="20" type="2" difference="0" hardness="Strong"/>
+            <customproperty taskproperty-id="tpc0"/>
+        </task>
+        <task id="19" name="Document de synthèse" color="#8cb6ce" meeting="false" start="2011-11-29" duration="5" complete="0" priority="1" expand="true">
+            <customproperty taskproperty-id="tpc0"/>
+        </task>
+        <task id="20" name="Document annexe" color="#8cb6ce" meeting="false" start="2011-11-29" duration="5" complete="0" priority="1" expand="true">
+            <customproperty taskproperty-id="tpc0"/>
+        </task>
+        <task id="21" name="Document veille technologique" color="#8cb6ce" meeting="false" start="2011-11-16" duration="6" complete="0" priority="1" expand="true">
+            <customproperty taskproperty-id="tpc0"/>
+        </task>
+        <task id="22" name="Préparation présentation" color="#8cb6ce" meeting="false" start="2011-11-16" duration="6" complete="0" priority="1" expand="true">
+            <depend id="23" type="2" difference="0" hardness="Strong"/>
+            <customproperty taskproperty-id="tpc0"/>
+        </task>
+        <task id="23" name="Présentation" color="#8cb6ce" meeting="false" start="2011-11-24" duration="1" complete="0" priority="1" expand="true">
+            <customproperty taskproperty-id="tpc0"/>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Elisa" function="Default:1" contacts="" phone=""/>
+        <resource id="1" name="Julien" function="Default:0" contacts="" phone=""/>
+        <resource id="2" name="Adrien" function="Default:0" contacts="" phone=""/>
+        <resource id="3" name="Armand" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="1" resource-id="1" function="Default:0" responsible="false" load="1.0"/>
+        <allocation task-id="1" resource-id="3" function="Default:0" responsible="false" load="1.0"/>
+        <allocation task-id="1" resource-id="0" function="Default:1" responsible="true" load="1.0"/>
+        <allocation task-id="1" resource-id="2" function="Default:0" responsible="false" load="1.0"/>
+        <allocation task-id="2" resource-id="0" function="Default:1" responsible="true" load="4.0"/>
+    </allocations>
+    <vacations/>
+    <taskdisplaycolumns>
+        <displaycolumn property-id="tpd3" order="0" width="86"/>
+    </taskdisplaycolumns>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
