@@ -33,7 +33,7 @@ Ainsi, comme nous allons le découvrir, cet architecture permettant de mettre  �
 \subparagraph{Infrastructure de support technique}
 Afin de simplifier l'exploitation, nous proposons que l'architecture logicielle proposée soit supportée par une achitecture basée sur des machines virtuelles, limitant grandement le nombre de machines de type serveur à déployer.
 Les systèmes virtuels sont facilement manipulables et peuvent être restaurés simplement en cas de défaut de machines.\\
-Bien entendu les infrastructures de transport, passives et actives sont à prévoir.
+Bien entendu les infrastructures de transport, passives et actives sont à prévoir sur les différents sites, si elles n'existent pas déja.
 
 \subparagraph{Architecture pour le site central}
 
@@ -41,7 +41,7 @@ Le site central est dans ce scenario le centre névralgique du système d'inform
 
 \begin{itemize}
 \item Main dataWarehouse : Principal entrepot de données de l'entreprise, c'est lui qui constitue la base de travail pour les application de business intelligence.
-\item MDM Server :  Serveur de Master data Management, en charge de la génération, du maintien, et de l'expoistion aux applications utilisatrices de la base d'exploitation de données de références.
+\item MDM Server :  Serveur de Master data Management, en charge de la génération, du maintien, et de l'exposition aux applications utilisatrices de la base d'exploitation de données de références.
 \item BI Server : Hébergment des principaux services de business intelligence, sytème de reporting, générateurs de tableaux de bords et applicatif dédié au DataMining.
 \item ETL Server : En charge de l'alimentation du dataWarehouse, assure la synchronisation des données entre les différents SGBD opérationels déployés sur les différents sites, et la synchro réciproque entre le datawarhouse et le système de master data management.
 \item Serveur central d'orchestration SOA : Serveur en charge de l'orchestration des principaux processus et méta-processus de l'entreprise, il pilote les services d'orchestration déployés dans chaque site.
@@ -53,7 +53,15 @@ La totalité des postes présents sont réutilisés, moyennant éventuellement u
 \subparagraph{Achitecture pour laboratoire & Usine}
 
 Chaque entité de l'entreprise possède son propre SI autonome, permettant un fonctionement de l'entreprise en mode dégradé. ( Site pricipal injoignable...)
-La seule différence 
+Toute la finesse de la solution se trouve au niveau de la décentralisaiton des bases de données opérationelles, qui sont par la suite agrégées au niveau du site principal \\
+Pour parvenir  à cela, nous dotons le serveur de BDD de trois fonctionalités principales.
+\begin{itemize}
+\item SGBD : Serveur de BDD classique, hébergeant toutes les données opérationelles nécessaires au fonctionnement du site.
+\item ESB : Système de synchronisation et de communication entre le serveur de BDD et les applicaiton opérationelles utilisatrices.
+\item MDM replication Server :  Serveur de rapatriement et de stockage des données de références du SI, permetant l'exploitation des données de références nécessaire au fonctionnement des application opérationelles.
+\end{itemize}
+
+Ensuite, les services proposés sont bien évidemment adaptés aux besoins des différents sites. Notons tout de même la présence d'un serveur d'orchestration SOA déporté pour controller les processus de fonctionnement des sites, très utile pour les usines de fabrication notamment.
 
 \paragraph{Robustesse et tolérance aux incidents}
 
