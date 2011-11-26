@@ -26,52 +26,65 @@ Enfin, nous prévoyons une refonte complète de la partie analytique de votre en
 
 Ainsi, comme nous allons le découvrir, cet architecture permettant de mettre  à profit un existant déjà performant et adapté à vos besoins, permet d'envisager à nouveau un système évolutif, doté des dernières technologies en terme de qualité de données et de business intelligence, permettant un pilotage de vos activités le plus précis posssible.\\
 
-\paragraph{Architecture & Service hébergés}
+\paragraph{Architecture \& Service hébergés}
 
-\includegraphics[scale=0.6]{DiagrameSOAPdc4.png}
+\includegraphics[scale=0.2]{DiagrameSOAPdc4.png}
 
 \subparagraph{Infrastructure de support technique}
 Afin de simplifier l'exploitation, nous proposons que l'architecture logicielle proposée soit supportée par une achitecture basée sur des machines virtuelles, limitant grandement le nombre de machines de type serveur à déployer.
 Les systèmes virtuels sont facilement manipulables et peuvent être restaurés simplement en cas de défaut de machines.\\
-Bien entendu les infrastructures de transport, passives et actives sont à prévoir sur les différents sites, si elles n'existent pas déja.
+Bien entendu les infrastructures de transport, passives et actives sont à prévoir sur les différents sites, si elles n'existent pas déjà.
 
 \subparagraph{Architecture pour le site central}
 
 Le site central est dans ce scenario le centre névralgique du système d'information de l'entreprise. Les services hébergés sont les suivants :\\
 
 \begin{itemize}
-\item Main dataWarehouse : Principal entrepot de données de l'entreprise, c'est lui qui constitue la base de travail pour les application de business intelligence.
+\item Main dataWarehouse : Principal entrepôt de données de l'entreprise, c'est lui qui constitue la base de travail pour les application de business intelligence.
 \item MDM Server :  Serveur de Master data Management, en charge de la génération, du maintien, et de l'exposition aux applications utilisatrices de la base d'exploitation de données de références.
-\item BI Server : Hébergment des principaux services de business intelligence, sytème de reporting, générateurs de tableaux de bords et applicatif dédié au DataMining.
-\item ETL Server : En charge de l'alimentation du dataWarehouse, assure la synchronisation des données entre les différents SGBD opérationels déployés sur les différents sites, et la synchro réciproque entre le datawarhouse et le système de master data management.
+\item BI Server : Hébergment des principaux services de business intelligence, système de reporting, générateurs de tableaux de bords et applicatif dédié au DataMining.
+\item ETL Server : En charge de l'alimentation du dataWarehouse, assure la synchronisation des données entre les différents SGBD opérationnels déployés sur les différents sites, et la synchro réciproque entre le datawarehouse et le système de master data management.
 \item Serveur central d'orchestration SOA : Serveur en charge de l'orchestration des principaux processus et méta-processus de l'entreprise, il pilote les services d'orchestration déployés dans chaque site.
 \item Serveur Groupware, dédié au travail collaboratif.
 \end{itemize}
 
-La totalité des postes présents sont réutilisés, moyennant éventuellement un dedéploiement de ces derniers. De plus, la création d'une DSI implique l'équipement des effectifs de ce service.
+La totalité des postes présents sont réutilisés, moyennant éventuellement un redéploiement de ces derniers. De plus, la création d'une DSI implique l'équipement des effectifs de ce service.
 
-\subparagraph{Achitecture pour laboratoire & Usine}
+\subparagraph{Achitecture pour laboratoire \& Usine}
 
-Chaque entité de l'entreprise possède son propre SI autonome, permettant un fonctionement de l'entreprise en mode dégradé. ( Site pricipal injoignable...)
-Toute la finesse de la solution se trouve au niveau de la décentralisaiton des bases de données opérationelles, qui sont par la suite agrégées au niveau du site principal \\
-Pour parvenir  à cela, nous dotons le serveur de BDD de trois fonctionalités principales.
+Chaque entité de l'entreprise possède son propre SI autonome, permettant un fonctionnement de l'entreprise en mode dégradé. ( Site principal in joignable...)
+Toute la finesse de la solution se trouve au niveau de la décentralisation des bases de données opérationnelles, qui sont par la suite agrégées au niveau du site principal \\
+Pour parvenir  à cela, nous dotons le serveur de BDD de trois fonctionnalités principales.
 \begin{itemize}
-\item SGBD : Serveur de BDD classique, hébergeant toutes les données opérationelles nécessaires au fonctionnement du site.
-\item ESB : Système de synchronisation et de communication entre le serveur de BDD et les applicaiton opérationelles utilisatrices.
-\item MDM replication Server :  Serveur de rapatriement et de stockage des données de références du SI, permetant l'exploitation des données de références nécessaire au fonctionnement des application opérationelles.
+\item SGBD : Serveur de BDD classique, hébergeant toutes les données opérationnelles nécessaires au fonctionnement du site.
+\item ESB : Système de synchronisation et de communication entre le serveur de BDD et les application opérationelles utilisatrices.
+\item MDM replication Server :  Serveur de rapatriement et de stockage des données de références du SI, permettant l'exploitation des données de références nécessaire au fonctionnement des application opérationnelles.
 \end{itemize}
 
-Ensuite, les services proposés sont bien évidemment adaptés aux besoins des différents sites. Notons tout de même la présence d'un serveur d'orchestration SOA déporté pour controller les processus de fonctionnement des sites, très utile pour les usines de fabrication notamment.
+Ensuite, les services proposés sont bien évidemment adaptés aux besoins des différents sites. Notons tout de même la présence d'un serveur d'orchestration SOA déporté pour controller les processus de fonctionnement des sites, très utile pour les usines de fabrication notamment, où l'avantage d'avoir une maitrise de l'activité par processus n'est plus à démontrer.
 
 \paragraph{Robustesse et tolérance aux incidents}
 
+Compte tenu de l'architecture détaillée auparavant, nous avons réussi à limiter sur de nombreux aspects les risques pour le système d'information.\\
+\subparagraph{Mode dégradé}
+
+Du fait de son architecture hautement décentralisée et des mécanismes de synchronisation issues des dernières technologies en date, le système d'information de chaque site reste opérationnel même si la liaison entre le site central et les sites distant n'est plus opérationnel. De plus, la cohérence des données n'est en aucun cas remise en question les outils d'EAI, ESB et autres Data Management sont la pour assurer le tout !
+
+\subparagraph{Réplication Géographique}
+Autre point positif, les données sont automatiquement répliquées entre les différents sites et le site central, chaque site pouvant avoir besoin des données opérationnelles d'un autre site.\\
+Ainsi, en cas de sinistre important sur l'un des sites, les risques de perte de données seront minimisés car ces dernières sont automatiquement répliquées sur les autres sites et le serveur central.
+
 \subsubsection{Impact organisationnel}
 
-\subsubsection{Plan de déploiement}
-
-\subsubsection{Gestion du changement utilisateur}
+Deux points de vue en réponse à cette question\\
+\begin{enumerate}
+\item Internalisation des compétences : création d'une DSI, et embauche des personels ayant la compétence de développement des connecteurs d'intégration, de déploiement et de maintenance de l'installation par étape. Ce choix ayant un coût fixe, il permet d'éviter de créer un lien de dépendance entre vous et une entreprise prestataire de services en informatique.
+\item Externalisation de la maintenance informatique : Il s'agit d'évaluer et de vérifier si votre actuel prestataire possède les compétences nécessaires, pour effectuer ce type de démarche, qui s'avère relativement difficile d'externaliser au final, du fait de la phase de développement spécifique, nécessitant un temps relativement long entre la première recette et la phase de stabilité opérationelle.
+\end{enumerate}
 
 \subsubsection{Conclusion}
+
+
 
 \subsection{Scénario de déploiement d'un ERP}
 
