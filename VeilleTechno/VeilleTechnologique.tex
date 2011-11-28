@@ -1,14 +1,12 @@
 \documentclass[a4paper]{article}
+\input{nation}
 
 \usepackage{hyperref}
 \hypersetup{
 colorlinks=false, % bool: Liens colorés
 pdfborder={0 0 0} % Ne pas encadrer les liens
 }
-\usepackage[utf8]{inputenc}
-\usepackage[francais]{babel}
-\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
-\usepackage{graphicx}
+
 \usepackage[final]{pdfpages}
 \usepackage{rotating}
 \usepackage{eurosym}
@@ -16,20 +14,24 @@ pdfborder={0 0 0} % Ne pas encadrer les liens
 \usepackage{float}
 \usepackage{color}
 \usepackage{colortbl}
+\usepackage{array}
+\usepackage[printonlyused]{acronym}
+
 % définir les commandes ici
-\newcommand{\titlecolor}[1]{\textcolor{blue}{\section{#1}}}
 
 % s'il y a beaucoup de commandes et de packages à inclure n'h&ésitez pas
 % à mettre tout ça dans un fichier include.tex et l'inclure
 % \input{include.tex}
 
+\lhead{PdC4 - Choix d'une architecture informatique}
+\rhead{\includegraphics [width=1.5cm]{insa-couleur.jpg}}
+\rfoot{\thepage\ de \pageref{LastPage}}
 
 
 
 \begin{document}
-\title{PdC 4 Synthèse veille technologie : solution d'aide au pilotage}
-
-\author{Elisa ABIDH, Adrien BROCHOT, Julien LEVESY, Armand ROSSIUS}
+\title{PdC 4 : Veille technologique : Outils d'aide au pilotage}
+\author{Elisa ABIDH, Adrien BROCHOT, Julien LEVESY,Armand ROSSIUS}
 
 %------------------------------------- Page de titre
 \maketitle
@@ -50,9 +52,9 @@ pdfborder={0 0 0} % Ne pas encadrer les liens
 \newpage
 %----------------------------------------------- Plan
 
-%\input{.tex}
-
-
-
+\input{Enjeu.tex}
+\input{SOA.tex}
+\input{bittle.tex}
+%\newpage
 
 \end{document}
