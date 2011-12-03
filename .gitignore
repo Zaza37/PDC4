@@ -1,0 +1,16 @@
+*~
+*.sw[op]
+*.pyc
+#*#
+*#
+#*
+.DS_STORE
+.mac
+*.out
+*.toc
+*.log
+*.aux
+*.dvi
+*.ilg
+*.ind
+*.gz
