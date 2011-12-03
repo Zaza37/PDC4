@@ -92,23 +92,42 @@ Deux points de vue en réponse à cette question\\
 \subsection{Conclusion}
 
 
-\section{Scénario de déploiement d'un ERP}
-
+\subsection{Scénario de déploiement d'un ERP}
+Le scénario que nous allons décrire ci dessous est une directive à prendre pour l'entreprise pour les 5 années à venir. Nous proposons à l'entreprise d'intégrer un ERP est plus particulièrement des modules adaptés à ces différents objectifs d'amélioration. 
 \subsubsection{Présentation de la solution}
-L’intégration de logiciels d’ERP (planification des ressources d’entreprise) consiste à intégrer des systèmes d’ERP propriétaires, anciens et indépendants, les uns aux autres ou avec d’autres ressources d’informations de l’entreprise, afin de répondre à divers besoins de B2B. Les systèmes d’ERP tels que ceux de SAP, Peoplesoft, Oracle et Lawson ont été conçus pour intégrer étroitement les processus d’une entreprise. Initialement, il s’agissait de la planification, de la fabrication et des ventes, mais les logiciels d’ERP plus récents couvrent également le marketing, le contrôle d’inventaire, le suivi des commandes, le service aux clients, les finances et les ressources humaines.
-Propose des applications spécialisées pour la gestion des laboratoires (LIMS), de la relation client (CRM), de la maintenance (GMAO)
+Cette solution consiste à intégrer au système existant un système d'ERP pour répondre aux besoins B2B de l'entreprise. Il propose des applications spécialisées pour la gestion des laboratoires (LIMS), de la relation client (CRM), de la maintenance (GMAO). Actuellement l'entreprise possède un SI fonctionnel et performant c'est pourquoi il n'est pas nécessaire de le modifier cependant il est intéressant pour l'entreprise de rajouter des fonctionnalités de gestion de certain processus. L'entreprise est composée d'un laboratoire central, structure contenant des données confidentielles, pour le moment sa gestion est similaire aux autres structures : usines, sièges et service central de maintenance. La solution que nous présentons dans ce scénario s'adapte parfaitement à l'entreprise en proposant un module dédié à la gestion du laboratoire, mais également aux autres besoins de l'entreprise : outils de pilotage, processus dédié au B2B.   
+\paragraph{Architecture Applicative}
+Voici une représentation des domaines qui seront gérer par le scénario que nous proposons de mettre en place :
+\begin{figure}[H]
+\begin{center}
+ \includegraphics[scale=0.5]{ERPsolution.png}
+  \caption{Nouveau système}
+\end{center}  
+\end{figure}
+
+Nous proposons d'intégrer aux domaines existants : vendre, marketing, approvisionner, ...  des modules spécifiques dédiés à la gestion du laboratoire, au B2B et aux outils de pilotage. \\
+Le module dédié à la gestion du laboratoire sera spécifique à l'entreprise alors que les modules de B2B et outils de pilotage seront à acheter. 
+
 \paragraph{Architecture Logicielle}
-soft hébergé quelque part
-pas d'installation sur machine
-acces via site web
-Permet 
+Cette solution ne nécessite pas de logiciel mais d'héberger un soft sur un serveur. Chaque poste aura accès aux systèmes via un site internet. Il n'y a donc pas d'installation particulière à faire au niveau des sites.
 \paragraph{Architecture matérielle}
-Une base de donnée unique répliquée sur chaque sites, ...
+Une base de donnée unique répliquée sur chaque sites sera installée au niveau d'EDS. Chaque site aura donc accès à une base de donnée en locale qui sera mise à jour une fois par jour : la nuit. Cette architecture permet à chaque site d'avoir un accès rapide à la base de donnée. 
 \subsubsection{Ressources nécessaires}
-Pour le déploiement d'une tel solution on peut envisager deux cas : soit on embauche du personnel dédié à l'intégration d'ERP soit on sous traite et on embauche une société spécialisé dans le domaine.
+Pour le déploiement d'une tel solution on peut envisager deux cas : soit on embauche du personnel dédié à l'intégration d'ERP soit on sous traite via une société spécialisée dans le domaine.
 \subsubsection{Plan de déploiement}
 1]Analyser le flux d'information de l'entreprise
 \subsubsection{Gestion du changement}
+Première phase : Étude de faisabilité
+Deuxième phase : cahier des charges fonctionnel
+Troisième phase : lancement de l'appel d'offre
+                          : choix de l'éditeur
+                          : choix de l'intégrateur
+                          : signature d'un contrat.
+                       
+D'après l'étude menée par  
+                     
+
+
 
 \subsubsection{Conclusion}
 Avantages :
@@ -128,17 +147,7 @@ Inconvénients :
 
 \begin{itemize}
 \item[.]Mise en œuvre pouvant être complexe si le périmètre est mal déterminé ou trop mouvant ou le projet mal piloté ;
-\begin{scriptsize}
-{\tiny •\begin{scriptsize}
-{\tiny •\begin{scriptsize}
-{\tiny •\begin{scriptsize}
-{\tiny •\begin{scriptsize}
-{\tiny •}
-\end{scriptsize}}
-\end{scriptsize}}
-\end{scriptsize}}
-\end{scriptsize}}
-\end{scriptsize}\item[.]oût élevé de 300 000 € minimum pour un progiciel fiable et de qualité, mais pouvant rapidement monter beaucoup plus haut, en fonction de l'industrie et de la complexité du projet. L'option fonctionnellement riche des solutions de logiciels libres si elle réduit les coûts de licence, ne supprime pas les coûts d'accompagnement et de formation ;
+\item[.]Coût élevé de 300 000 € minimum pour un progiciel fiable et de qualité, mais pouvant rapidement monter beaucoup plus haut, en fonction de l'industrie et de la complexité du projet. L'option fonctionnellement riche des solutions de logiciels libres si elle réduit les coûts de licence, ne supprime pas les coûts d'accompagnement et de formation ;
 \item[.]Périmètre fonctionnel souvent plus large que les besoins de l'organisation ou de l'entreprise (le progiciel est parfois sous-utilisé) ;
 \item[.]Périmètre fonctionnel pouvant ne pas couvrir l'ensemble des besoins4 ;
     lourdeur et rigidité de mise en œuvre ;
