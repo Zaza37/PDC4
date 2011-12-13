@@ -5,19 +5,18 @@
 \contentsline {subsubsection}{\numberline {1.1.2}Architecture \& Service h\IeC {\'e}berg\IeC {\'e}s}{4}{subsubsection.1.1.2}
 \contentsline {subsubsection}{\numberline {1.1.3}Infrastructure de support technique}{4}{subsubsection.1.1.3}
 \contentsline {subsubsection}{\numberline {1.1.4}Architecture pour le site central}{4}{subsubsection.1.1.4}
-\contentsline {subsubsection}{\numberline {1.1.5}Achitecture pour laboratoire \& Usine}{4}{subsubsection.1.1.5}
+\contentsline {subsubsection}{\numberline {1.1.5}Architecture pour laboratoire \& Usine}{4}{subsubsection.1.1.5}
 \contentsline {subsubsection}{\numberline {1.1.6}Nouveaux services envisag\IeC {\'e}s}{5}{subsubsection.1.1.6}
 \contentsline {subsection}{\numberline {1.2}Robustesse et tol\IeC {\'e}rance aux incidents}{5}{subsection.1.2}
 \contentsline {subsubsection}{\numberline {1.2.1}Mode d\IeC {\'e}grad\IeC {\'e}}{5}{subsubsection.1.2.1}
 \contentsline {subsubsection}{\numberline {1.2.2}R\IeC {\'e}plication G\IeC {\'e}ographique}{5}{subsubsection.1.2.2}
 \contentsline {subsection}{\numberline {1.3}Impact organisationnel}{5}{subsection.1.3}
-\contentsline {subsection}{\numberline {1.4}Conclusion}{5}{subsection.1.4}
-\contentsline {subsection}{\numberline {1.5}Sc\IeC {\'e}nario de d\IeC {\'e}ploiement d'un ERP}{5}{subsection.1.5}
-\contentsline {subsubsection}{\numberline {1.5.1}Pr\IeC {\'e}sentation de la solution}{6}{subsubsection.1.5.1}
+\contentsline {subsection}{\numberline {1.4}Sc\IeC {\'e}nario de d\IeC {\'e}ploiement d'un ERP}{5}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Pr\IeC {\'e}sentation de la solution}{6}{subsubsection.1.4.1}
 \contentsline {paragraph}{Architecture Applicative}{6}{section*.2}
-\contentsline {paragraph}{Architecture Logicielle}{6}{section*.3}
-\contentsline {paragraph}{Architecture mat\IeC {\'e}rielle}{6}{section*.4}
-\contentsline {subsubsection}{\numberline {1.5.2}Ressources n\IeC {\'e}cessaires}{7}{subsubsection.1.5.2}
-\contentsline {subsubsection}{\numberline {1.5.3}Plan de d\IeC {\'e}ploiement}{7}{subsubsection.1.5.3}
-\contentsline {subsubsection}{\numberline {1.5.4}Gestion du changement}{7}{subsubsection.1.5.4}
-\contentsline {subsubsection}{\numberline {1.5.5}Conclusion}{7}{subsubsection.1.5.5}
+\contentsline {paragraph}{Architecture Logicielle}{7}{section*.3}
+\contentsline {paragraph}{Architecture mat\IeC {\'e}rielle}{7}{section*.4}
+\contentsline {subsubsection}{\numberline {1.4.2}Ressources n\IeC {\'e}cessaires}{7}{subsubsection.1.4.2}
+\contentsline {subsubsection}{\numberline {1.4.3}Gestion du changement}{7}{subsubsection.1.4.3}
+\contentsline {subsection}{\numberline {1.5}bilan financier}{7}{subsection.1.5}
+\contentsline {subsubsection}{\numberline {1.5.1}Conclusion}{7}{subsubsection.1.5.1}

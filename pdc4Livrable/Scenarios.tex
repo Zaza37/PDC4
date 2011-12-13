@@ -1,5 +1,8 @@
 \section{Etude des solutions d'architecture}
 
+Dans cette partie nous allons vous présenter deux scénarios décrivant des directives à prendre pour l'entreprise. Nous avons pour se faire, nous avons étudié avec précision l'existant de l'entreprise. Nous nous sommes donc appuyé sur les données de l'entreprise pour définir ses scénarios. \\
+Nous présenterons dans un premier temps le scénario d'urbanisation du SI puis dans un deuxième temps le scénario de déploiement d'un ERP.
+
 \subsection{Scénario d'Urbanisation du SI}
 
 Afin de répondre aux besoins exprimés par le client, nous proposons une première solution de déploiement basée sur une architecture d'intégration d'application, autrement dit EAI. 
@@ -90,11 +93,9 @@ Deux points de vue en réponse à cette question\\
 \item Externalisation de la maintenance informatique : Il s'agit d'évaluer et de vérifier si votre actuel prestataire possède les compétences nécessaires, pour effectuer ce type de démarche, qui s'avère relativement difficile d'externaliser au final, du fait de la phase de développement spécifique, nécessitant un temps relativement long entre la première recette et la phase de stabilité opérationnelle.
 \end{enumerate}
 
-\subsection{Conclusion}
-
-
 \subsection{Scénario de déploiement d'un ERP}
-Le scénario que nous allons décrire ci dessous est une directive à prendre pour l'entreprise pour les 5 années à venir. Nous proposons à l'entreprise d'intégrer un ERP est plus particulièrement des modules adaptés à ces différents objectifs d'amélioration. 
+Nous avons pu constater qu'actuellement le SI de l'entreprise fonctionnement parfaitement bien. Nous proposons donc un scénario qui s'intègre au SI. \\
+Le scénario que nous allons décrire ci dessous est une directive à prendre pour l'entreprise pour les 5 années à venir. Nous proposons à l'entreprise d'intégrer un ERP est plus particulièrement des modules adaptés à ces différents objectifs de perfectionnement.  
 \subsubsection{Présentation de la solution}
 Cette solution consiste à intégrer au système existant un système d'ERP pour répondre aux besoins B2B de l'entreprise. Il propose des applications spécialisées pour la gestion des laboratoires (LIMS), de la relation client (CRM), de la maintenance (GMAO). Actuellement l'entreprise possède un SI fonctionnel et performant c'est pourquoi il n'est pas nécessaire de le modifier cependant il est intéressant pour l'entreprise de rajouter des fonctionnalités de gestion de certain processus. L'entreprise est composée d'un laboratoire central, structure contenant des données confidentielles, pour le moment sa gestion est similaire aux autres structures : usines, sièges et service central de maintenance. La solution que nous présentons dans ce scénario s'adapte parfaitement à l'entreprise en proposant un module dédié à la gestion du laboratoire, mais également aux autres besoins de l'entreprise : outils de pilotage, processus dédié au B2B.   
 \paragraph{Architecture Applicative}
@@ -106,57 +107,48 @@ Voici une représentation des domaines qui seront gérer par le scénario que no
 \end{center}  
 \end{figure}
 
-Nous proposons d'intégrer aux domaines existants : vendre, marketing, approvisionner, ...  des modules spécifiques dédiés à la gestion du laboratoire, au B2B et aux outils de pilotage. \\
-Le module dédié à la gestion du laboratoire sera spécifique à l'entreprise alors que les modules de B2B et outils de pilotage seront à acheter. 
-
+Nous proposons d'intégrer aux domaines existants : vendre, marketing, approvisionner, ...  des modules supplémentaires permettant d'une part la gestion du laboratoire, d'autre part le déploiement d'outils d'aide au pilotage et pour finir des processus permettant la gestion du B2B.\\
+Le module dédié à la gestion du laboratoire sera spécifique est développer pour correspondre au mieu à l'entreprise. En ce qui concerne les modules de B2B et les outils d'aide au pilotage nous proposons d'utiliser 
+ceux existants. Nous savons qu'actuellement les grands entreprises d'ERP propose des modules configurables.   
 \paragraph{Architecture Logicielle}
 Cette solution ne nécessite pas de logiciel mais d'héberger un soft sur un serveur. Chaque poste aura accès aux systèmes via un site internet. Il n'y a donc pas d'installation particulière à faire au niveau des sites.
 \paragraph{Architecture matérielle}
-Une base de donnée unique répliquée sur chaque sites sera installée au niveau d'EDS. Chaque site aura donc accès à une base de donnée en locale qui sera mise à jour une fois par jour : la nuit. Cette architecture permet à chaque site d'avoir un accès rapide à la base de donnée. 
+Pour pouvoir mettre en place cette solution, nous allons devoir installer au niveau d'EDS un serveur dédié à la base de donnée. Chaque site aura donc accès à une base de donnée en locale qui sera mise à jour une fois par jour : la nuit. Cette architecture permet à chaque site d'avoir un accès rapide à la base de donnée. Les données des laboratoires seront transférer vers un serveur sécurisé. 
 \subsubsection{Ressources nécessaires}
 Pour le déploiement d'une tel solution on peut envisager deux cas : soit on embauche du personnel dédié à l'intégration d'ERP soit on sous traite via une société spécialisée dans le domaine.
-\subsubsection{Plan de déploiement}
-1]Analyser le flux d'information de l'entreprise
 \subsubsection{Gestion du changement}
-Première phase : Étude de faisabilité
-Deuxième phase : cahier des charges fonctionnel
-Troisième phase : lancement de l'appel d'offre
-                          : choix de l'éditeur
-                          : choix de l'intégrateur
-                          : signature d'un contrat.
-                       
-D'après l'étude menée par  
-                     
-
-
+Pour permettre aux utilisateurs d'avoir une transition facile nous vous proposons un plan de déploiement comprenant des formations dédiés aux personnels concernés et un accompagnement vers le changement.
+\subsection{bilan financier}
+\begin{figure}[H]
+\begin{center}
+ \includegraphics[scale=0.5]{CoutSolution.png}
+  \caption{Cout de la solution}
+\end{center}  
+\end{figure}
 
 \subsubsection{Conclusion}
-Avantages :
+Cette solution répond pleinement au besoin de l'entreprise concernant l'augmentation de sa réactivité vis à vis des fournisseurs et l'augmentation de ses services auprès de ses clients. Elle permet également d'améliorer le pilotage de l'entreprise grâce au module dédié à cette fonction.\\
+La mise en place d'un ERP est de plus en plus fréquent au sein des entreprises, c'est un système fiable qui permet : 
 \begin{itemize}
 \item[.]Optimisation des processus de gestion;
 \item[.]Cohérence et homogénéité des informations (un seul fichier articles, un seul fichier clients, etc.) ;
 \item[.]Intégrité et unicité du Système d'information ;
 \item[.]Partage du même système d’information facilitant la communication interne et externe ;
-\item[.]Minimisation des coûts : pas d’interface entre les modules, synchronisation des traitements, maintenance orrective simplifiée car assurée directement par l'éditeur et non plus par le service informatique de l'entreprise (celui-ci garde néanmoins sous sa responsabilité la maintenance évolutive : amélioration des fonctionnalités, évolution des règles de gestion, etc.) ;
+\item[.]Minimisation des coûts : pas d’interface entre les modules, synchronisation des traitements, maintenance corrective simplifiée car assurée directement par l'éditeur et non plus par le service informatique de l'entreprise (celui-ci garde néanmoins sous sa responsabilité la maintenance évolutive : amélioration des fonctionnalités, évolution des règles de gestion, etc.) ;
 \item[.]Globalisation de la formation (même logique, même ergonomie) ;
 \item[.]Diminution du nombre de salariés ayant pour mission principale la saisie comptable (aide-comptable);
-\item[.]Maîtrise des coûts, des délais de mise en oeuvre, de déploiement ;\\
+\item[.]Maîtrise des coûts, des délais de mise en œuvre, de déploiement ;\\
 \end{itemize}
-La mise en oeuvre d'un ERP/PGI dans une entreprise est associée à une révision en profondeur de l'organisation des tâches et à une optimisation et standardisation des processus, en s'appuyant sur le « cadre normatif » de l'ERP/PGI.\\
 
-Inconvénients :
+Il faut tout de même savoir que la solution proposée présente certains risques : 
 
 \begin{itemize}
-\item[.]Mise en œuvre pouvant être complexe si le périmètre est mal déterminé ou trop mouvant ou le projet mal piloté ;
-\item[.]Coût élevé de 300 000 € minimum pour un progiciel fiable et de qualité, mais pouvant rapidement monter beaucoup plus haut, en fonction de l'industrie et de la complexité du projet. L'option fonctionnellement riche des solutions de logiciels libres si elle réduit les coûts de licence, ne supprime pas les coûts d'accompagnement et de formation ;
-\item[.]Périmètre fonctionnel souvent plus large que les besoins de l'organisation ou de l'entreprise (le progiciel est parfois sous-utilisé) ;
-\item[.]Périmètre fonctionnel pouvant ne pas couvrir l'ensemble des besoins4 ;
-    lourdeur et rigidité de mise en œuvre ;
-    difficultés d'appropriation par le personnel de l'entreprise ;
-    nécessité d'une bonne connaissance des processus de l'entreprise (par exemple, une petite commande et une grosse commande nécessitent deux processus différents : il est important de savoir pourquoi, de savoir décrire les différences entre ces deux processus de façon à bien les paramétrer et à adapter le fonctionnement standard du PGI/ERP aux besoins de l'entreprise) ;
-    nécessité parfois d'adapter certains processus de l'organisation ou de l'entreprise au progiciel ;
-    nécessité d'une maintenance continue ;
-    captivité vis-à-vis de l'éditeur : le choix d'une solution est souvent structurant pour l'entreprise et un changement de PGI peut être extrêmement lourd à gérer.
-
-
+\item[•] Mise en œuvre pouvant être complexe si le périmètre est mal déterminé ou trop mouvant ou le projet mal piloté ;
+\item[•] Coût élevé de 300 000 € minimum pour un progiciel fiable et de qualité, mais pouvant rapidement monter beaucoup plus haut, en fonction de l'industrie et de la complexité du projet. L'option fonctionnellement riche des solutions de logiciels libres si elle réduit les coûts de licence, ne supprime pas les coûts d'accompagnement et de formation ;
+\item[•]Périmètre fonctionnel souvent plus large que les besoins de l'organisation ou de l'entreprise (le progiciel est parfois sous-utilisé) ;
+\item[•]Nécessité d'une maintenance continue ;
+\item[•]Captivité vis-à-vis de l'éditeur : le choix d'une solution est souvent structurant pour l'entreprise et un \item[•]Changement de PGI peut être extrêmement lourd à gérer.
 \end{itemize}
+
+\subsection{Conclusion}
+Cette partie aura permis de mettre en lumière deux directives que l'entreprise peut être amener à suivre pour répondre à ces objectifs définis dans son schéma directeur. La liste des scénarios est exhaustive, nous avons décris les deux scénarios qui nous paraissait les plus pertinents.   

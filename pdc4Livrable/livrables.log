@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  3 DEC 2011 19:01
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  13 DEC 2011 16:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -936,7 +936,7 @@ ables.toc)
 \openout4 = `livrables.toc'.
 
 
-<insa-couleur.jpg, id=106, 425.4294pt x 227.6505pt>
+<insa-couleur.jpg, id=101, 425.4294pt x 227.6505pt>
 File: insa-couleur.jpg Graphic file (type jpg)
  <use insa-couleur.jpg>
 
@@ -948,26 +948,32 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
 [2
 
  <./insa-couleur.jpg>] (./Scenarios.tex
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
+Overfull \hbox (8.67442pt too wide) in paragraph at lines 5--8
+[]\OT1/cmr/m/n/10 Afin de r^^Sepondre aux be-soins ex-prim^^Ses par le client, 
+nous pro-po-sons une premi^^Rere so-lu-tion de d^^Seploiement
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--24
+Underfull \hbox (badness 10000) in paragraph at lines 21--25
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
-<DiagrameSOAPdc4.png, id=117, 1017.8025pt x 803.0pt>
+<DiagrameSOAPdc4.png, id=112, 1017.8025pt x 803.0pt>
 File: DiagrameSOAPdc4.png Graphic file (type png)
  <use DiagrameSOAPdc4.png>
 File: insa-couleur.jpg Graphic file (type jpg)
@@ -980,7 +986,7 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
@@ -993,12 +999,12 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4 <./DiagrameSOAPdc4.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
 
@@ -1010,7 +1016,7 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5] <ERPsolution.png, id=137, 509.905pt x 612.2875pt>
+[5] <ERPsolution.png, id=132, 509.905pt x 612.2875pt>
 File: ERPsolution.png Graphic file (type png)
  <use ERPsolution.png>
 File: insa-couleur.jpg Graphic file (type jpg)
@@ -1027,20 +1033,48 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.115 \subsubsection
-                    {Ressources nécessaires} <./ERPsolution.png>]
-Overfull \hbox (4.78485pt too wide) in paragraph at lines 141--142
+l.112 \paragraph
+                {Architecture matérielle} <./ERPsolution.png>]
+Overfull \hbox (5.20117pt too wide) in paragraph at lines 117--118
+[]\OT1/cmr/m/n/10 Pour per-mettre aux uti-li-sa-teurs d'avoir une tran-si-tion 
+fa-cile nous vous pro-po-sons un plan de d^^Seploiement
+ []
+
+<CoutSolution.png, id=142, 951.555pt x 600.2425pt>
+File: CoutSolution.png Graphic file (type png)
+ <use CoutSolution.png>
+Overfull \hbox (20.53223pt too wide) in paragraph at lines 121--122
+ [] 
+ []
+
+File: insa-couleur.jpg Graphic file (type jpg)
+<use insa-couleur.jpg>
+
+Package Fancyhdr Warning: \headheight is too small (14.0pt): 
+ Make it at least 26.43588pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.133 \item[.]
+              Minimisation des coûts : pas d’interface entre les modules,...
+ <./CoutSolution.png (PNG copy)>]
+Overfull \hbox (4.78485pt too wide) in paragraph at lines 135--136
 []\OT1/cmr/m/n/10 Diminution du nombre de sa-lari^^Ses ayant pour mis-sion prin
 -ci-pale la sai-sie comp-table (aide-comptable); 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
 
  []
 
@@ -1053,36 +1087,52 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7]
+[8]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 62.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 62.
  (./livrables.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 62.
-Package rerunfilecheck Info: File `livrables.out' has not changed.
-(rerunfilecheck)             Checksum: 86709D5FFB084039E3E300C8BC75F710;1594.
+
+
+Package rerunfilecheck Warning: File `livrables.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `livrables.out':
+(rerunfilecheck)             Before: EB3DDA0BF073F482A028389DC6B543CB;1535
+(rerunfilecheck)             After:  5C6EFE1D6BA97FDF7FFAAC07CF81C877;1518.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 10293 strings out of 493747
- 148005 string characters out of 3143546
- 252617 words of memory out of 3000000
- 13329 multiletter control sequences out of 15000+200000
+ 10299 strings out of 493747
+ 148113 string characters out of 3143546
+ 251617 words of memory out of 3000000
+ 13331 multiletter control sequences out of 15000+200000
  10706 words of font info for 29 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  43i,15n,43p,1020b,481s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/te
-xlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/tex
-live/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texl
-ive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texl
-ive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
-e/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/
-2010/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/20
-10/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2010/texm
-f-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on livrables.pdf (7 pages, 401585 bytes).
+pdfTeX warning (dest): name{subsubsection.1.4.5} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.1.4.4} has been referenced but does n
+ot exist, replaced by a fixed one
+
+{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{
+/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texl
+ive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texli
+ve/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texliv
+e/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texliv
+e/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
+2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/20
+10/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2010
+/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2010/texmf-
+dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on livrables.pdf (8 pages, 477239 bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
- 171 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
- 168 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 202 PDF objects out of 1000 (max. 8388607)
+ 176 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 165 words of extra memory for PDF output out of 10000 (max. 10000000)
 
