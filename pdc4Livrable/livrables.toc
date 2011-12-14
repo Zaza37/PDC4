@@ -18,6 +18,31 @@
 \contentsline {paragraph}{Architecture mat\IeC {\'e}rielle}{7}{section*.4}
 \contentsline {subsubsection}{\numberline {1.4.2}Ressources n\IeC {\'e}cessaires}{7}{subsubsection.1.4.2}
 \contentsline {subsubsection}{\numberline {1.4.3}Gestion du changement}{7}{subsubsection.1.4.3}
-\contentsline {subsection}{\numberline {1.5}bilan financier}{7}{subsection.1.5}
-\contentsline {subsubsection}{\numberline {1.5.1}Conclusion}{7}{subsubsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5}Aspect financier}{7}{subsection.1.5}
+\contentsline {subsubsection}{\numberline {1.5.1}Conclusion}{8}{subsubsection.1.5.1}
 \contentsline {subsection}{\numberline {1.6}Conclusion}{8}{subsection.1.6}
+\contentsline {section}{\numberline {2}Crit\IeC {\`e}res}{9}{section.2}
+\contentsline {subsection}{\numberline {2.1}INTRODUCTION}{9}{subsection.2.1}
+\contentsline {paragraph}{}{9}{section*.5}
+\contentsline {subsection}{\numberline {2.2}M\IeC {\'E}THODE D'\IeC {\'E}VALUATION DES CRIT\IeC {\`E}RES}{9}{subsection.2.2}
+\contentsline {paragraph}{}{9}{section*.6}
+\contentsline {paragraph}{}{9}{section*.7}
+\contentsline {paragraph}{}{9}{section*.8}
+\contentsline {paragraph}{}{9}{section*.9}
+\contentsline {paragraph}{}{9}{section*.10}
+\contentsline {paragraph}{}{9}{section*.11}
+\contentsline {paragraph}{}{9}{section*.12}
+\contentsline {paragraph}{}{9}{section*.13}
+\contentsline {paragraph}{}{9}{section*.14}
+\contentsline {paragraph}{}{9}{section*.15}
+\contentsline {paragraph}{}{10}{section*.16}
+\contentsline {paragraph}{}{10}{section*.17}
+\contentsline {subsection}{\numberline {2.3}LISTE DES CRIT\IeC {\`E}RES}{10}{subsection.2.3}
+\contentsline {paragraph}{}{10}{section*.18}
+\contentsline {paragraph}{}{10}{section*.19}
+\contentsline {subsubsection}{\numberline {2.3.1}RENTABILIT\IeC {\'E}}{10}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}D\IeC {\'E}PLOIEMENT}{10}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}AUTRES}{10}{subsubsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.4}Satisfaction des Objectifs}{10}{subsubsection.2.3.4}
+\contentsline {subsubsection}{\numberline {2.3.5}\IeC {\'E}valuation des Solutions}{11}{subsubsection.2.3.5}
+\contentsline {paragraph}{}{11}{section*.20}
