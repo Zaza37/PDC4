@@ -18,6 +18,6 @@
 \contentsline {paragraph}{Architecture mat\IeC {\'e}rielle}{7}{section*.4}
 \contentsline {subsubsection}{\numberline {1.4.2}Ressources n\IeC {\'e}cessaires}{7}{subsubsection.1.4.2}
 \contentsline {subsubsection}{\numberline {1.4.3}Gestion du changement}{7}{subsubsection.1.4.3}
-\contentsline {subsection}{\numberline {1.5}bilan financier}{7}{subsection.1.5}
-\contentsline {subsubsection}{\numberline {1.5.1}Conclusion}{7}{subsubsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5}Aspect financier}{7}{subsection.1.5}
+\contentsline {subsubsection}{\numberline {1.5.1}Conclusion}{8}{subsubsection.1.5.1}
 \contentsline {subsection}{\numberline {1.6}Conclusion}{8}{subsection.1.6}
