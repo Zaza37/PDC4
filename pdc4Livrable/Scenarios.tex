@@ -73,19 +73,19 @@ L'architecture proposée possède donc l'avantage avant tout de mettre en place 
 \item SSO / Ldap / CAS : Nous prévoyons la mise en place d'un système de centralisation des identités dans le SI, afin d'en augmenter la sécurité et l'extensibilité, notamment via l'intégration aux fournisseurs.
 \end{itemize}
 
-\subsection{Robustesse et tolérance aux incidents}
+\subsubsection{Robustesse et tolérance aux incidents}
 
 Compte tenu de l'architecture détaillée auparavant, nous avons réussi à limiter sur de nombreux aspects les risques pour le système d'information.\\
 
-\subsubsection{Mode dégradé}
+\subsubsection* {Mode dégradé}
 
 Du fait de son architecture hautement décentralisée et des mécanismes de synchronisation issues des dernières technologies en date, le système d'information de chaque site reste opérationnel même si la liaison entre le site central et les sites distant n'est plus opérationnel. De plus, la cohérence des données n'est en aucun cas remise en question les outils d'EAI, ESB et autres Data Management sont la pour assurer le tout !
 
-\subsubsection{Réplication Géographique}
+\subsubsection*{Réplication Géographique}
 Autre point positif, les données sont automatiquement répliquées entre les différents sites et le site central, chaque site pouvant avoir besoin des données opérationnelles d'un autre site.\\
 Ainsi, en cas de sinistre important sur l'un des sites, les risques de perte de données seront minimisés car ces dernières sont automatiquement répliquées sur les autres sites et le serveur central.
 
-\subsection{Impact organisationnel}
+\subsubsection{Impact organisationnel}
 
 Deux points de vue en réponse à cette question\\
 \begin{enumerate}
@@ -93,6 +93,14 @@ Deux points de vue en réponse à cette question\\
 \item Externalisation de la maintenance informatique : Il s'agit d'évaluer et de vérifier si votre actuel prestataire possède les compétences nécessaires, pour effectuer ce type de démarche, qui s'avère relativement difficile d'externaliser au final, du fait de la phase de développement spécifique, nécessitant un temps relativement long entre la première recette et la phase de stabilité opérationnelle.
 \end{enumerate}
 
+\subsubsection{Quelques chiffres clés du scénario}
+\begin{figure}[H]
+\begin{center}
+ \includegraphics [scale=0.5]{ChiffresScenario1.pdf}
+\end{center}  
+\end{figure}
+
+\newpage
 \subsection{Scénario de déploiement d'un ERP}
 Nous avons pu constater qu'actuellement le SI de l'entreprise fonctionnement parfaitement bien. Nous proposons donc un scénario qui s'intègre au SI. \\
 Le scénario que nous allons décrire ci dessous est une directive à prendre pour l'entreprise pour les 5 années à venir. Nous proposons à l'entreprise d'intégrer un ERP est plus particulièrement des modules adaptés à ces différents objectifs de perfectionnement.  
@@ -118,16 +126,23 @@ Pour pouvoir mettre en place cette solution, nous allons devoir installer au niv
 Pour le déploiement d'une tel solution on peut envisager deux cas : soit on embauche du personnel dédié à l'intégration d'ERP soit on sous traite via une société spécialisée dans le domaine.
 \subsubsection{Gestion du changement}
 Pour permettre aux utilisateurs d'avoir une transition facile nous vous proposons un plan de déploiement comprenant des formations dédiés aux personnels concernés et un accompagnement vers le changement.
-\subsection{Aspect financier}
+\subsubsection{Bilan financier}
 Vous trouverez plus bas une représentation graphique résumant les principaux coûts de la solution, une étude approfondie sera bien évidemment nécessaire pour avoir un budget dé	taillé. Cependant ces premiers chiffres nous permettent d'avoir une estimation du montant final de la solution.
 \begin{figure}[H]
 \begin{center}
- \includegraphics[scale=0.5]{CoutSolution.png}
-  \caption{Cout de la solution}
+ \includegraphics[scale=0.4]{CoutSolution.png}
+  \caption{Analyse du cout du scénario}
+\end{center}  
+\end{figure}
+\subsubsection*{Chiffrage détaillée}
+\begin{figure}[H]
+\begin{center}
+ \includegraphics[scale=0.5]{ChiffresScenario2.png}
 \end{center}  
 \end{figure}
 
-\subsubsection{Conclusion}
+
+\subsubsection{Points forts, points faibles de la solution}
 Cette solution répond pleinement au besoin de l'entreprise concernant l'augmentation de sa réactivité vis à vis des fournisseurs et l'augmentation de ses services auprès de ses clients. Elle permet également d'améliorer le pilotage de l'entreprise grâce au module dédié à cette fonction.\\
 La mise en place d'un ERP est de plus en plus fréquent au sein des entreprises, c'est un système fiable qui permet : 
 \begin{itemize}
